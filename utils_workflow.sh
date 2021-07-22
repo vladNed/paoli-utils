@@ -1,4 +1,12 @@
 #!/bin/bash
+# Ubuntu Utils
+#
+# Script to download and install font all
+# user things for ubuntu development
+#
+# Author: Vlad Nedelcu
+# Creation data: 10 Mar 2021
+# email: nedelcuvd@gmail.com
 set -e
 
 # Color vars
@@ -7,7 +15,7 @@ green=`tput setaf 2`
 yellow=`tput setaf 3`
 reset=`tput sgr0`
 
-# Install neofetch 
+# Install neofetch
 echo "${green} Installing NeoFetch ${reset}"
 sudo apt-get update
 sudo apt-get install neofetch
