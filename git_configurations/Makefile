@@ -1,6 +1,8 @@
-.PHONY: test
-test:
-	- echo "+ Make is working. Please give command"
+.PHONY: all
+all:
+	- echo "> Git Workflow started"
+	- default-config
+	- projects-init
 
 projects-init:
 	- ./init_projects_scope.sh
@@ -10,3 +12,6 @@ projects-add:
 
 projects-rm:
 	- ./remove_project_scope.sh
+
+default-config:
+	- ./configure_default_git.sh
