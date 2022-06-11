@@ -1,16 +1,8 @@
-# utils
-Utilities for installing software as a startup on ubuntu
+# CURT (Configuration Utilities scRipTs)
+Scripts for setting up configurations, packages and utilities for ubuntu.as a startup on ubuntu
 
-## Usage
+## Usage (in-progress)
 
-Run command, to give permissions:
-```bash 
-chmod +x ./utils_workflow.sh
-```
+For each of the folders that have a root `Makefile` please use the instructions in the `READMEs` to run each script or all
 
-After, run normally :D thank you
 
-## Notes
-
-Don't forget to log off and add the docker group afterwards
-There is a yellow message displayed in the installation workflow 
