@@ -1,5 +1,5 @@
 # PAOLI (Packages And cOnfiguration utiLIties)
-Scripts for setting up configurations, packages and utilities for ubuntu.as a startup on ubuntu
+Scripts for setting up configurations, packages and utilities for ubuntu. It acts as a guide for installing helpful packages, configurations, directories and keys for a nice development experience. Very customizable with a touch of imposed defaults.
 
 ## Usage (in-progress)
 
