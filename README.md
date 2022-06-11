@@ -1,4 +1,4 @@
-# CURT (Configuration Utilities scRipTs)
+# PAOLI (Packages And cOnfiguration utiLIties)
 Scripts for setting up configurations, packages and utilities for ubuntu.as a startup on ubuntu
 
 ## Usage (in-progress)
