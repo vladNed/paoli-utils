@@ -4,7 +4,7 @@
 # Has options to choose if you only want the root folder or have sub direcctories
 # for multiple github scopes
 #
-# Author: Vlad Nedelcu, Teodor Dumistrescu
+# Author: Vlad Nedelcu, Teodor Dumitrescu
 # Creation data: 10 Jun 2022
 # email: nedelcuvd@gmail.com
 
@@ -23,9 +23,9 @@ function setupProjectGitConfig() {
   user_name="$2"
   user_email="$3"
 
-  git config --global includeIf.gitdir:"${project_path}/".path \""${project_path}/.gitconfig"\"
-  git config --file "${project_path}/.gitconfig" user.name \""${USER_NAME}"\"
-  git config --file "${project_path}/.gitconfig" user.email \""${USER_EMAIL}"\"
+  git config --global includeIf.gitdir:"${project_path}/".path "${project_path}/.gitconfig"
+  git config --file "${project_path}/.gitconfig" user.name "${USER_NAME}"
+  git config --file "${project_path}/.gitconfig" user.email "${USER_EMAIL}"
 }
 
 # Check if user wants per-github directory
@@ -36,7 +36,7 @@ if [ "$ONLY_ROOT_FOLDER" == "y" ] || [ "$ONLY_ROOT_FOLDER" == "yes" ]; then
 
     # Define user.name and user.email
     USER_NAME="Vlad Nedelcu"
-    USER_EMAIL="Vlad.Nedelcu@corsearch.com"
+    USER_EMAIL="nedelcuvd@gmail.com"
 
     # Create projects dir and setup .gitconfig for root
     mkdir -p "${PROJECTS_ROOT}"
@@ -49,7 +49,7 @@ else
     # - no spaces allowed after the comma delimiters
     # - should have the following pattern: projects_directory,git_commit_name,git_commit_email
     PROJECTS=(
-        github.com-personal,"Vlad Nedelcu","Vlad.Nedelcu@corsearch.com"
+        github.com-personal,"Vlad Nedelcu","nedelcuvd@gmail.com"
     )
 
     # For each pair specified in PROJECTS, generate the folder and .gitconfig

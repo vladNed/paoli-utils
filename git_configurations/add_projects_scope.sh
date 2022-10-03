@@ -2,7 +2,7 @@
 
 # Scrip to add a new project scope to projects folder
 #
-# Author: Vlad Nedelcu + Teodor Dumistrescu
+# Author: Vlad Nedelcu, Teodor Dumitrescu
 # Created: 10 Jun 2022
 # Email: nedelcuvd@gmail.com
 
@@ -17,9 +17,9 @@ function setupProjectGitConfig() {
   user_name="$2"
   user_email="$3"
 
-  git config --global includeIf.gitdir:"${project_path}/".path \""${project_path}/.gitconfig"\"
-  git config --file "${project_path}/.gitconfig" user.name \""${USER_NAME}"\"
-  git config --file "${project_path}/.gitconfig" user.email \""${USER_EMAIL}"\"
+  git config --global includeIf.gitdir:"${project_path}/".path "${project_path}/.gitconfig"
+  git config --file "${project_path}/.gitconfig" user.name "${USER_NAME}"
+  git config --file "${project_path}/.gitconfig" user.email "${USER_EMAIL}"
 }
 
 
